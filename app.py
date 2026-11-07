@@ -9,7 +9,7 @@ from PIL import Image
 IMG_SIZE = (128, 128)
 
 app = Flask(__name__)
-model = tf.keras.models.load_model("blood_cnn.keras")
+model = tf.keras.models.load_model("blood_resnet.keras")
 with open("class_names.json") as f:
     class_names = json.load(f)
 
